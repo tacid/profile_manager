@@ -11,10 +11,7 @@
 	*/
 
 	$english = array(
-	
-		// Generic action words 
-		'add' => "Add",
-				
+					
 		// entity names
 		'item:object:custom_profile_field' => 'Custom Profile Field',
 		'item:object:custom_profile_field_category' => 'Custom Profile Field Category',
@@ -167,7 +164,6 @@
 		'profile_manager:actions:title' => 'Actions',
 	
 		// Reset
-		'profile_manager:actions:reset' => 'Reset',
 		'profile_manager:actions:reset:description' => 'Removes all custom profile fields',
 		'profile_manager:actions:reset:confirm' => 'Are you sure you wish to reset all profile fields?',
 		'profile_manager:actions:reset:error:unknown' => 'Unknown error occurred while resetting all profile fields',
@@ -366,6 +362,7 @@
 	
 		// register pre check
 		'profile_manager:register_pre_check:missing' => 'The next field must be filled: %s',
+		'profile_manager:register_pre_check:terms' => 'You need to accept the terms to complete the registration',
 		'profile_manager:register_pre_check:profile_icon:error' => 'Error uploading your profile icon (probably related to the file size)',
 		'profile_manager:register_pre_check:profile_icon:nosupportedimage' => 'Uploaded profile icon is not the right type (jpg, gif, png)',
 	
