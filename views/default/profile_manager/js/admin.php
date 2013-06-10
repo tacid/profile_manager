@@ -126,7 +126,7 @@ function changeFieldType(){
 // categories	
 function changeFieldCategory(field, category_guid){
 	var field_guid = $(field).attr("id").replace("elgg-object-","");
-	category_guid = category_guid.replace("elgg-object-","");
+	category_guid = category_guid.replace("elgg-object-","").replace("custom_profile_field_category_", "");
 
 	$.post(elgg.security.addToken('<?php echo elgg_get_site_url(); ?>action/profile_manager/changeCategory?guid=' + field_guid + '&category_guid=' + category_guid), function(data){
 		if(data == 'true'){		
